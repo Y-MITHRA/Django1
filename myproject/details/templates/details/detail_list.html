@@ -9,9 +9,11 @@
     <h1>Detail List</h1>
     <ul>
         {% for detail in details %}
-            <li>{{ detail.name }} - {{ detail.description }}</li>
+            <li>{{ detail.movie }} - {{ detail.theatre }}</li>
         {% endfor %}
     </ul>
     <a href="{% url 'add_detail' %}">Add Detail</a>
 </body>
 </html>
+
+

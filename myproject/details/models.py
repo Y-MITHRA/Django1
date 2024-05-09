@@ -2,8 +2,9 @@
 from django.db import models
 
 class Detail(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
+    movie = models.CharField(max_length=100)
+    theatre = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name
+        return self.movie
+
