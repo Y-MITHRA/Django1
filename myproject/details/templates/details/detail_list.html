@@ -1,0 +1,17 @@
+<!-- details/templates/details/detail_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail List</title>
+</head>
+<body>
+    <h1>Detail List</h1>
+    <ul>
+        {% for detail in details %}
+            <li>{{ detail.name }} - {{ detail.description }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_detail' %}">Add Detail</a>
+</body>
+</html>
